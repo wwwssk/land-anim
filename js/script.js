@@ -1,4 +1,4 @@
-$('.points__container').click(function(){
+$('.points__container').ready(function(){
 	$('.main-anim').addClass('active');
 
 	$('.points__container').addClass('active');

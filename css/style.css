@@ -25,7 +25,6 @@
   opacity: 0.7;
 }
 .main-anim .points__container .point {
-  cursor: pointer;
   position: relative;
   top: 0;
   left: 0;
@@ -35,13 +34,13 @@
   border-radius: 15px;
 }
 .main-anim .points__container .point.active {
-  transition: height 0.2s cubic-bezier(0.97, 1.9, 0.62, 0.68) 0.7s;
+  transition: height 0.2s cubic-bezier(0.97, 1.9, 0.62, 0.68) 1.2s;
 }
 .main-anim .points__container.active {
-  transition: width 0.4s cubic-bezier(0.15, 1.29, 1, 1), opacity 0.3s ease;
+  transition: width 0.4s cubic-bezier(0.15, 1.29, 1, 1) 0.5s, opacity 0.7s ease 0.5s;
   width: 1200px;
   opacity: 0.2;
-  animation: points-container 0.5s ease 1.4s forwards;
+  animation: points-container 0.5s ease 1.9s forwards;
 }
 @keyframes points-container {
   50% {
@@ -56,7 +55,7 @@
 }
 .main-anim .point1.active {
   height: 82px;
-  animation: point1-height 0.7s ease 1.7s forwards;
+  animation: point1-height 0.7s ease 2.2s forwards;
 }
 @keyframes point1-height {
   0% {
@@ -68,7 +67,7 @@
 }
 .main-anim .point2.active {
   height: 156px;
-  animation: point2-height 0.7s ease 1.7s forwards;
+  animation: point2-height 0.7s ease 3.2s forwards;
 }
 @keyframes point2-height {
   0% {
@@ -80,7 +79,7 @@
 }
 .main-anim .point3.active {
   height: 208px;
-  animation: point3-height 0.7s ease 1.7s forwards;
+  animation: point3-height 0.7s ease 3.2s forwards;
 }
 @keyframes point3-height {
   0% {
@@ -92,7 +91,7 @@
 }
 .main-anim .point4.active {
   height: 304px;
-  animation: point4-height 0.7s ease 1.7s forwards;
+  animation: point4-height 0.7s ease 3.2s forwards;
 }
 @keyframes point4-height {
   0% {
@@ -104,7 +103,7 @@
 }
 .main-anim .point5.active {
   height: 436px;
-  animation: point5-height 0.7s ease 1.7s forwards;
+  animation: point5-height 0.7s ease 3.2s forwards;
 }
 @keyframes point5-height {
   0% {
@@ -142,7 +141,7 @@
   animation: lines 0s ease 2s forwards;
 }
 .main-anim .lines.active .lines__container {
-  animation: lines-container 0.3s ease-out 2s forwards;
+  animation: lines-container 0.3s ease-out 2.5s forwards;
 }
 @keyframes lines-container {
   0% {
@@ -163,7 +162,7 @@
   }
 }
 .main-anim.active {
-  animation: main-anim 0.5s linear 2.4s forwards;
+  animation: main-anim 0.5s linear 2.9s forwards;
 }
 @keyframes main-anim {
   0% {
@@ -316,7 +315,7 @@
   gap: 22px;
 }
 .main-body.active {
-  animation: main-body 0.5s ease 3s forwards;
+  animation: main-body 0.5s ease 3.5s forwards;
 }
 @keyframes main-body {
   0% {
