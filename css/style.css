@@ -67,7 +67,7 @@
 }
 .main-anim .point2.active {
   height: 156px;
-  animation: point2-height 0.7s ease 3.2s forwards;
+  animation: point2-height 0.7s ease 2.2s forwards;
 }
 @keyframes point2-height {
   0% {
@@ -79,7 +79,7 @@
 }
 .main-anim .point3.active {
   height: 208px;
-  animation: point3-height 0.7s ease 3.2s forwards;
+  animation: point3-height 0.7s ease 2.2s forwards;
 }
 @keyframes point3-height {
   0% {
@@ -91,7 +91,7 @@
 }
 .main-anim .point4.active {
   height: 304px;
-  animation: point4-height 0.7s ease 3.2s forwards;
+  animation: point4-height 0.7s ease 2.2s forwards;
 }
 @keyframes point4-height {
   0% {
@@ -103,7 +103,7 @@
 }
 .main-anim .point5.active {
   height: 436px;
-  animation: point5-height 0.7s ease 3.2s forwards;
+  animation: point5-height 0.7s ease 2.2s forwards;
 }
 @keyframes point5-height {
   0% {
