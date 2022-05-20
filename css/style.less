@@ -42,6 +42,7 @@
 		width: 1200px;
 		opacity: 0.2;
 		animation: points-container 0.5s ease 1.9s forwards;
+		-webkit-animation: points-container 0.5s ease 1.9s forwards;
 	}
 	@keyframes points-container {
 		0% {
@@ -60,6 +61,7 @@
 	.point1.active {
 		height: 82px;
 		animation: point1-height 0.7s ease 2.2s forwards;
+		-webkit-animation: point1-height 0.7s ease 2.2s forwards;
 	}
 	@keyframes point1-height {
 		0% {
@@ -73,6 +75,7 @@
 	.point2.active {
 		height: 156px;
 		animation: point2-height 0.7s ease 2.2s forwards;
+		-webkit-animation: point2-height 0.7s ease 2.2s forwards;
 	}
 	@keyframes point2-height {
 		0% {
@@ -86,6 +89,7 @@
 	.point3.active {
 		height: 208px;
 		animation: point3-height 0.7s ease 2.2s forwards;
+		-webkit-animation: point3-height 0.7s ease 2.2s forwards;
 	}
 	@keyframes point3-height {
 		0% {
@@ -99,6 +103,7 @@
 	.point4.active {
 		height: 304px;
 		animation: point4-height 0.7s ease 2.2s forwards;
+		-webkit-animation: point4-height 0.7s ease 2.2s forwards;
 	}
 	@keyframes point4-height {
 		0% {
@@ -112,6 +117,7 @@
 	.point5.active {
 		height: 436px;
 		animation: point5-height 0.7s ease 2.2s forwards;
+		-webkit-animation: point5-height 0.7s ease 2.2s forwards;
 	}
 	@keyframes point5-height {
 		0% {
@@ -134,32 +140,38 @@
 		justify-content: center;
 		.lines__container {
 			position: relative;
-			top: -300%;
+			top: 0;
+			left: 0;
 			height: 170vh;
 			width: 300px;
 			display: flex;
 			justify-content: space-between;
 			transform: rotate(30deg);
 			.line {
+				position: relative;
 				height: 100%;
 				width: 90px;
-				background: url('../img/line.png') center / 100% no-repeat;
+				background: radial-gradient(355202.73% 5242.74% at 18126.77% 271.85%, #5200FF 0%, rgba(204, 121, 255, 0.85) 52.91%, #00FFF0 100%)
+				/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+				, #FFFFFF;
 			}
 		}
 	} 
 	.lines.active {
 		animation: lines 0s ease 2s forwards;
+		-webkit-animation: lines 0s ease 2s forwards;
 		.lines__container {
-			animation: lines-container 0.3s ease-out 2.5s forwards;
-		}
-		@keyframes lines-container {
-			0% {
-				top: -166%;
-				left: 37%;
+			.line {
+				top: -300vh;
+				left: -10vw;
+				animation: lines-container 0.3s ease-out 2.5s forwards;
+				-webkit-animation: lines-container 0.3s ease-out 2.5s forwards;
 			}
-			100% {
-				top: -35%;
-				left: 0;
+			@keyframes lines-container {
+				100% {
+					top: -30vh;
+					left: -10vw;
+				}
 			}
 		}
 	}
@@ -175,6 +187,7 @@
 
 .main-anim.active {
 	animation: main-anim 0.5s linear 2.9s forwards;
+	-webkit-animation: main-anim 0.5s linear 2.9s forwards;
 }
 @keyframes main-anim {
 	0% {
@@ -344,6 +357,7 @@
 
 .main-body.active {
 	animation: main-body 0.5s ease 3.5s forwards;
+	-webkit-animation: main-body 0.5s ease 3.5s forwards;
 }
 @keyframes main-body {
 	0% {
