@@ -6,6 +6,7 @@
 
 .main-anim {
 	position: absolute;
+	z-index: 1;
 	top: 0;
 	left: 0;
 	width: 100vw;
@@ -32,23 +33,29 @@
 			background: #FFFFFF;
 			border-radius: 15px;
 		}
-		.point.active {
-			transition: height 0.2s cubic-bezier(.97, 1.9, .62, .68) 1.2s;
-		}
 	}
 
 	.points__container.active {
-		transition: width 0.4s cubic-bezier(.15, 1.29, 1, 1) 0.5s, opacity 0.7s ease 0.5s;
-		width: 1200px;
-		opacity: 0.2;
-		animation: points-container 0.5s ease 1.9s forwards;
-		-webkit-animation: points-container 0.5s ease 1.9s forwards;
+		opacity: 0.7;
+		animation: points-container 5.7s ease 1s forwards;
+		-webkit-animation: points-container 5.7s ease 1s forwards;
+		-moz-animation: points-container 5.7s ease 1s forwards;
 	}
 	@keyframes points-container {
 		0% {
+			opacity: 0.7;
 		}
-		50% {
+		30% {
+			opacity: 0.2;
+		}
+		40% {
+			opacity: 0.2;
+		}
+		47% {
 			opacity: 0.5;
+		}
+		55% {
+			opacity: 0.1;
 		}
 		100% {
 			opacity: 0.1;
@@ -56,12 +63,45 @@
 	}
 
 	.point1.active {
-		height: 82px;
-		animation: point1-height 0.7s ease 2.2s forwards;
-		-webkit-animation: point1-height 0.7s ease 2.2s forwards;
+		animation: point1-height 4s ease 0.6s forwards;
+		-webkit-animation: point1-height 4s ease 0.6s forwards;
+		-moz-animation: point1-height 4s ease 0.6s forwards;
 	}
 	@keyframes point1-height {
 		0% {
+			height: 26px;
+		}
+		28% {
+			height: 26px;
+		}
+		30% {
+			height: 122px;
+		}
+		33% {
+			height: 42px;
+		}
+		36% {
+			height: 112px;
+		}
+		39% {
+			height: 52px;
+		}
+		42% {
+			height: 102px;
+		}
+		45%{
+			height: 62px;
+		}
+		48% {
+			height: 92px;
+		}
+		53% {
+			height: 72px;
+		}
+		60% {
+			height: 82px;
+		}
+		80% {
 			height: 82px;
 		}
 		100% {
@@ -70,56 +110,236 @@
 	}
 
 	.point2.active {
-		height: 156px;
-		animation: point2-height 0.7s ease 2.2s forwards;
-		-webkit-animation: point2-height 0.7s ease 2.2s forwards;
+		animation: point2-height 4s ease 0.6s forwards;
+		-webkit-animation: point2-height 4s ease 0.6s forwards;
+		-moz-animation: point2-height 4s ease 0.6s forwards;
 	}
 	@keyframes point2-height {
 		0% {
+			height: 26px;
+		}
+	
+		28% {
+			height: 26px;
+		}
+	
+		30% {
+			height: 196px;
+		}
+	
+		33% {
+			height: 116px;
+		}
+	
+		36% {
+			height: 186px;
+		}
+	
+		39% {
+			height: 126px;
+		}
+	
+		42% {
+			height: 176px;
+		}
+
+		45% {
+			height: 136px;
+		}
+
+		48% {
+			height: 166px;
+		}
+	
+		53% {
+			height: 146px;
+		}
+	
+		60% {
 			height: 156px;
 		}
+	
+		80% {
+			height: 156px;
+		}
+	
 		100% {
 			height: 112px;
 		}
 	}
 
 	.point3.active {
-		height: 208px;
-		animation: point3-height 0.7s ease 2.2s forwards;
-		-webkit-animation: point3-height 0.7s ease 2.2s forwards;
+		animation: point3-height 4s ease 0.6s forwards;
+		-webkit-animation: point3-height 4s ease 0.6s forwards;
+		-moz-animation: point3-height 4s ease 0.6s forwards;
 	}
 	@keyframes point3-height {
 		0% {
+			height: 26px;
+		}
+	
+		28% {
+			height: 26px;
+		}
+	
+		30% {
+			height: 248px;
+		}
+	
+		33% {
+			height: 166px;
+		}
+	
+		36% {
+			height: 238px;
+		}
+	
+		39% {
+			height: 176px;
+		}
+	
+		42% {
+			height: 228px;
+		}
+	
+		45% {
+			height: 186px;
+		}
+	
+		48% {
+			height: 218px;
+		}
+	
+		53% {
+			height: 196px;
+		}
+	
+		60% {
 			height: 208px;
 		}
+	
+		80% {
+			height: 208px;
+		}
+	
 		100% {
 			height: 148px;
 		}
 	}
 
 	.point4.active {
-		height: 304px;
-		animation: point4-height 0.7s ease 2.2s forwards;
-		-webkit-animation: point4-height 0.7s ease 2.2s forwards;
+		animation: point4-height 4s ease 0.6s forwards;
+		-webkit-animation: point4-height 4s ease 0.6s forwards;
+		-moz-animation: point4-height 4s ease 0.6s forwards;
 	}
 	@keyframes point4-height {
 		0% {
+			height: 26px;
+		}
+	
+		28% {
+			height: 26px;
+		}
+	
+		30% {
+			height: 344px;
+		}
+	
+		33% {
+			height: 264px;
+		}
+	
+		36% {
+			height: 334px;
+		}
+	
+		39% {
+			height: 274px;
+		}
+	
+		42% {
+			height: 324px;
+		}
+	
+		45% {
+			height: 284px;
+		}
+	
+		48% {
+			height: 314px;
+		}
+	
+		53% {
+			height: 294px;
+		}
+	
+		60% {
 			height: 304px;
 		}
+	
+		80% {
+			height: 304px;
+		}
+	
 		100% {
 			height: 222px;
 		}
 	}
 
 	.point5.active {
-		height: 436px;
-		animation: point5-height 0.7s ease 2.2s forwards;
-		-webkit-animation: point5-height 0.7s ease 2.2s forwards;
+		animation: point5-height 4s ease 0.6s forwards;
+		-webkit-animation: point5-height 4s ease 0.6s forwards;
+		-moz-animation: point5-height 4s ease 0.6s forwards;
 	}
 	@keyframes point5-height {
 		0% {
+			height: 26px;
+		}
+	
+		28% {
+			height: 26px;
+		}
+	
+		30% {
+			height: 476px;
+		}
+	
+		33% {
+			height: 396px;
+		}
+	
+		36% {
+			height: 466px;
+		}
+	
+		39% {
+			height: 406px;
+		}
+	
+		42% {
+			height: 456px;
+		}
+	
+		45% {
+			height: 416px;
+		}
+	
+		48% {
+			height: 446px;
+		}
+	
+		53% {
+			height: 426px;
+		}
+	
+		60% {
 			height: 436px;
 		}
+	
+		80% {
+			height: 436px;
+		}
+	
 		100% {
 			height: 316px;
 		}
@@ -128,7 +348,7 @@
 //line----------------------------------------line------------------------------------------------line
 	.lines {
 		position: absolute;
-		z-index: -1;
+		z-index: 2;
 		top: 0;
 		left: 0;
 		width: 100vw;
@@ -146,6 +366,8 @@
 			transform: rotate(30deg);
 			.line {
 				position: relative;
+				top: -300vh;
+				left: -5vw;
 				height: 100%;
 				width: 90px;
 				img {
@@ -158,12 +380,15 @@
 	.lines.active {
 		animation: lines 0s ease 2s forwards;
 		-webkit-animation: lines 0s ease 2s forwards;
+		-moz-animation: lines 0s ease 2s forwards;
 		.lines__container {
 			.line {
-				top: -300vh;
+				top: 0vh;
 				left: -10vw;
 				animation: lines-container 0.3s ease-out 2.5s forwards;
 				-webkit-animation: lines-container 0.3s ease-out 2.5s forwards;
+				-moz-animation: points-container 0.5s ease 1.9s forwards;
+
 			}
 			@keyframes lines-container {
 				100% {
@@ -183,22 +408,9 @@
 	}
 }
 
-.main-anim.active {
-	animation: main-anim 0.5s linear 2.9s forwards;
-	-webkit-animation: main-anim 0.5s linear 2.9s forwards;
-}
-@keyframes main-anim {
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
-}
-
-
 
 .main-body {
+	z-index: 3;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -206,7 +418,6 @@
 	height: 100vh;
 	overflow-x: hidden;
 	overflow-y: visible;
-	z-index: -1;
 	opacity: 0;
 	.main-body__container {
 		padding-top: 55px;
@@ -259,8 +470,6 @@
 				}
 			}
 		
-			
-		
 			.main-body__btns {
 				margin-top: 75px;
 				display: flex;
@@ -273,6 +482,8 @@
 					line-height: 22px;
 					padding: 12px 57px;
 					transition: opacity 0.3s ease 0s;
+					-webkit-transition: opacity 0.3s ease 0s;
+					-moz-transition: opacity 0.3s ease 0s;
 					&:hover{
 						opacity: 0.7;
 					}
@@ -301,6 +512,8 @@
 			padding: 35px 0;
 			a {
 				transition: opacity 0.3s ease 0s;
+				-webkit-transition: opacity 0.3s ease 0s;
+				-moz-transition: opacity 0.3s ease 0s;
 			}
 			a:hover {
 				opacity: 0.7;
@@ -318,6 +531,8 @@
 				a {
 					margin-left: 12px;
 					transition: all 0.3s ease 0s;
+					-webkit-transition: all 0.3s ease 0s;
+					-moz-transition: all 0.3s ease 0s;
 					font-family: 'Inter';
 					font-style: normal;
 					font-weight: 400;
@@ -350,19 +565,5 @@
 				}
 			}
 		}
-	}
-}
-
-.main-body.active {
-	animation: main-body 0.5s ease 3.5s forwards;
-	-webkit-animation: main-body 0.5s ease 3.5s forwards;
-}
-@keyframes main-body {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		z-index: 3;
-		opacity: 1;
 	}
 }
