@@ -384,9 +384,12 @@
   color: #FFFFFF;
   text-align: center;
 }
+.main-body .main-body__container .main-body__main .main-body__title span {
+  color: #E335FF;
+}
 .main-body .main-body__container .main-body__main .main-body__text {
   margin-top: 75px;
-  max-width: 440px;
+  max-width: 439px;
 }
 .main-body .main-body__container .main-body__main .main-body__text span {
   display: block;
