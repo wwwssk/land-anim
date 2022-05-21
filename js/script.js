@@ -7,17 +7,22 @@ $('.points__container').ready(function(){
 
 
 window.onload = function() {
-	var point = document.querySelector(".points__container");
+	var pointMore = document.querySelector(".points__container-more");
+	var pointLess = document.querySelector(".points__container-less");
+
 	var line = $(".line");
 	var mainAnim = $(".main-anim");
 	var mainBody = $(".main-body");
 	
-	TweenLite.to(point, 0.5, {
+	TweenLite.to(pointMore, 0.5, {
 		width: "1200px", delay: 1
 	});
-	
+	TweenLite.to(pointLess, 0.5, {
+		width: "98vw", delay: 1
+	});
+
 	TweenLite.to(line, 0.5, {
-		top: '-20vh', delay: 4
+		top: '-70vh', delay: 4
 	});
 	
 	TweenLite.to(mainAnim, 0.5, {
