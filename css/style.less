@@ -319,13 +319,13 @@
 		}
 	}
 	.points__container-less {
-		@media (min-width: 1439px){
+		@media (min-width: 1439px), (max-width: 768px){
 			display: none;
 		}
-		width: 15px;
+		width: 20px;
 		.point {
-			height: 15px;
-			width: 15px;
+			height: 20px;
+			width: 20px;
 		}
 		.point1.active {
 			animation: point1-height-less 4s ease 0.6s forwards;
@@ -335,7 +335,7 @@
 	
 		@keyframes point1-height-less {
 			28% {
-				height: 15px;
+				height: 20px;
 			}
 	
 			30% {
@@ -391,7 +391,7 @@
 	
 		@keyframes point2-height-less {
 			28% {
-				height: 15px;
+				height: 20px;
 			}
 	
 			30% {
@@ -447,7 +447,7 @@
 	
 		@keyframes point3-height-less {
 			28% {
-				height: 15px;
+				height: 20px;
 			}
 	
 			30% {
@@ -503,7 +503,7 @@
 	
 		@keyframes point4-height-less {
 			28% {
-				height: 15px;
+				height: 20px;
 			}
 	
 			30% {
@@ -559,7 +559,7 @@
 	
 		@keyframes point5-height-less {
 			28% {
-				height: 15px;
+				height: 20px;
 			}
 	
 			30% {
@@ -606,6 +606,297 @@
 				height: 316px;
 			}
 		}
+	}
+	.points__container-mobile {
+		@media (min-width: 769px){
+			display: none;
+		}
+		width: 12px;
+		
+			.point {
+				height: 12px;
+				width: 12px;
+			}
+		
+			.point1.active {
+				animation: point1-height-mobile 4s ease 0.6s forwards;
+				-webkit-animation: point1-height-mobile 4s ease 0.6s forwards;
+				-moz-animation: point1-height-mobile 4s ease 0.6s forwards;
+			}
+		
+			@keyframes point1-height-mobile {
+				28% {
+					height: 12px;
+				}
+		
+				30% {
+					height: 122px;
+				}
+		
+				33% {
+					height: 42px;
+				}
+		
+				36% {
+					height: 112px;
+				}
+		
+				39% {
+					height: 52px;
+				}
+		
+				42% {
+					height: 102px;
+				}
+		
+				45% {
+					height: 62px;
+				}
+		
+				48% {
+					height: 92px;
+				}
+		
+				53% {
+					height: 72px;
+				}
+		
+				60% {
+					height: 82px;
+				}
+		
+				80% {
+					height: 82px;
+				}
+		
+				100% {
+					height: 58px;
+				}
+			}
+		
+			.point2.active {
+				animation: point2-height-mobile 4s ease 0.6s forwards;
+				-webkit-animation: point2-height-mobile 4s ease 0.6s forwards;
+				-moz-animation: point2-height-mobile 4s ease 0.6s forwards;
+			}
+		
+			@keyframes point2-height-mobile {
+				28% {
+					height: 12px;
+				}
+		
+				30% {
+					height: 196px;
+				}
+		
+				33% {
+					height: 116px;
+				}
+		
+				36% {
+					height: 186px;
+				}
+		
+				39% {
+					height: 126px;
+				}
+		
+				42% {
+					height: 176px;
+				}
+		
+				45% {
+					height: 136px;
+				}
+		
+				48% {
+					height: 166px;
+				}
+		
+				53% {
+					height: 146px;
+				}
+		
+				60% {
+					height: 156px;
+				}
+		
+				80% {
+					height: 156px;
+				}
+		
+				100% {
+					height: 112px;
+				}
+			}
+		
+			.point3.active {
+				animation: point3-height-mobile 4s ease 0.6s forwards;
+				-webkit-animation: point3-height-mobile 4s ease 0.6s forwards;
+				-moz-animation: point3-height-mobile 4s ease 0.6s forwards;
+			}
+		
+			@keyframes point3-height-mobile {
+				28% {
+					height: 12px;
+				}
+		
+				30% {
+					height: 248px;
+				}
+		
+				33% {
+					height: 166px;
+				}
+		
+				36% {
+					height: 238px;
+				}
+		
+				39% {
+					height: 176px;
+				}
+		
+				42% {
+					height: 228px;
+				}
+		
+				45% {
+					height: 186px;
+				}
+		
+				48% {
+					height: 218px;
+				}
+		
+				53% {
+					height: 196px;
+				}
+		
+				60% {
+					height: 208px;
+				}
+		
+				80% {
+					height: 208px;
+				}
+		
+				100% {
+					height: 148px;
+				}
+			}
+		
+			.point4.active {
+				animation: point4-height-mobile 4s ease 0.6s forwards;
+				-webkit-animation: point4-height-mobile 4s ease 0.6s forwards;
+				-moz-animation: point4-height-mobile 4s ease 0.6s forwards;
+			}
+		
+			@keyframes point4-height-mobile {
+				28% {
+					height: 12px;
+				}
+		
+				30% {
+					height: 344px;
+				}
+		
+				33% {
+					height: 264px;
+				}
+		
+				36% {
+					height: 334px;
+				}
+		
+				39% {
+					height: 274px;
+				}
+		
+				42% {
+					height: 324px;
+				}
+		
+				45% {
+					height: 284px;
+				}
+		
+				48% {
+					height: 314px;
+				}
+		
+				53% {
+					height: 294px;
+				}
+		
+				60% {
+					height: 304px;
+				}
+		
+				80% {
+					height: 304px;
+				}
+		
+				100% {
+					height: 222px;
+				}
+			}
+		
+			.point5.active {
+				animation: point5-height-mobile 4s ease 0.6s forwards;
+				-webkit-animation: point5-height-mobile 4s ease 0.6s forwards;
+				-moz-animation: point5-height-mobile 4s ease 0.6s forwards;
+			}
+		
+			@keyframes point5-height-mobile {
+				28% {
+					height: 12px;
+				}
+		
+				30% {
+					height: 476px;
+				}
+		
+				33% {
+					height: 396px;
+				}
+		
+				36% {
+					height: 466px;
+				}
+		
+				39% {
+					height: 406px;
+				}
+		
+				42% {
+					height: 456px;
+				}
+		
+				45% {
+					height: 416px;
+				}
+		
+				48% {
+					height: 446px;
+				}
+		
+				53% {
+					height: 426px;
+				}
+		
+				60% {
+					height: 436px;
+				}
+		
+				80% {
+					height: 436px;
+				}
+		
+				100% {
+					height: 316px;
+				}
+			}
 	}
 
 	.points__container.active {
@@ -857,10 +1148,11 @@
 				}
 			}
 		}
-		
+		.main-body__footer-wrapper {
+			width: 100%;
+		}
 		.main-body__footer {
 			margin-top: 100px;
-			width: 100%;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -871,7 +1163,7 @@
 				gap: 14px-;
 			}
 			@media (max-width: 768px) {
-				align-items: flex-start;
+				align-items: center;
 				flex-direction: column;
 			}
 			a {
@@ -888,11 +1180,10 @@
 				}
 				@media (max-width: 460px){
 					display: flex;
-					flex-wrap: wrap;
+					flex-direction: column;
 				}
 				>span {
 					margin-top: 7px;
-					flex: 1 1 100%;
 					order: 2;
 					font-family: 'Inter';
 					font-style: normal;
@@ -907,6 +1198,10 @@
 					span {
 						text-transform: uppercase;
 					}
+				}
+				div {
+					display: inline-flex;
+					justify-content: center;
 				}
 				a {
 					margin-left: 12px;
@@ -949,7 +1244,7 @@
 				display: flex;
 				align-items: center;
 				@media (max-width: 500px) {
-					align-items: flex-start;
+					align-items: center;
 					flex-direction: column;
 				}
 				>span {

@@ -9,6 +9,7 @@ $('.points__container').ready(function(){
 window.onload = function() {
 	var pointMore = document.querySelector(".points__container-more");
 	var pointLess = document.querySelector(".points__container-less");
+	var pointMobile = document.querySelector(".points__container-mobile");
 
 	var line = $(".line");
 	var mainAnim = $(".main-anim");
@@ -18,7 +19,10 @@ window.onload = function() {
 		width: "1200px", delay: 1
 	});
 	TweenLite.to(pointLess, 0.5, {
-		width: "98vw", delay: 1
+		width: "80vw", delay: 1
+	});
+	TweenLite.to(pointMobile, 0.5, {
+		width: "96vw", delay: 1
 	});
 
 	TweenLite.to(line, 0.5, {
